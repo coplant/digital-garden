@@ -108,3 +108,65 @@ Elasticsearch включает в себя:
 
 Репликация -- процесс создания копий (реплик) основных фрагментов (`shard`) на разных узлах (`node`)
 для повышения доступности данных и обеспечения отказоустойчивости кластера.
+
+!!! tip ""
+    `P` - главный шард  
+    `R` - реплицированный шард
+
+### CRUD
+
+[REST API](https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html)
+
+```http
+# получить список доступных команд по категории
+GET _cat
+
+# получить информацию по шардам
+GET _cat/shards
+
+# получить информацию по индексам
+GET _cat/indices
+
+# получить первые документы в индексе
+GET <index>/_search
+
+# удалить индекс
+DELETE <index>
+
+# создать индекс
+PUT <index>
+
+# получить информацию по индексу
+GET <index>
+
+# создать индекс с определенным количеством фрагментов
+PUT <index>
+{
+    "settings": {
+        "number_of_shards": 5
+    }
+}
+
+# вставить документ
+PUT <index>/_doc
+{
+    "key": "value"
+}
+
+# добавить новое поле
+POST <index>/_update/<UUID>
+{
+    "doc": {
+        "new": 2
+    }
+}
+
+# получить документ по id
+GET <index>/_doc/<UUID>
+
+# узнать шард документа 
+GET <index>/_search_shard?routing=<UUID>
+
+# удалить документ
+DELETE <index>/_doc/<UUID>
+```
