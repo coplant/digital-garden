@@ -6,6 +6,8 @@
 
 ## Elasticsearch
 
+[Tutorial](https://www.elastic.co/search-labs/tutorials/search-tutorial/welcome)
+
 ### Введение
 
 Elasticsearch - поисковой движок, входящий в состав ElasticStack, набора инструментов для работы с большими объемами данных. 
@@ -106,7 +108,3 @@ Elasticsearch включает в себя:
 
 Репликация -- процесс создания копий (реплик) основных фрагментов (`shard`) на разных узлах (`node`)
 для повышения доступности данных и обеспечения отказоустойчивости кластера.
-
-Общая архитектура Elasticsearch выглядит следующим образом:
-
-![img.png](../../img/elastic/struct.png)
