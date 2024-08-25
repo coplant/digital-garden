@@ -10,8 +10,9 @@ repo_url: https://github.com/coplant/docs
 theme:
   name: material
   features:
-#    - navigation.sections
-    - navigation.tabs
+    - navigation.sections
+#    - navigation.tabs
+    - navigation.top
     - navigation.tracking
 #    - navigation.footer
 #    - toc.follow
