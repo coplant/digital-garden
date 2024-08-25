@@ -44,6 +44,8 @@ theme:
 # Plugins
 plugins:
   - blog
+  - tags:
+      tags_file: tags.md
   - section-index
   - literate-nav:
       nav_file: SUMMARY.md
@@ -51,13 +53,13 @@ plugins:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
 
 # Navigation
-nav:
+#nav:
 #  - Home: index.md
 #  - Python:
 #    - Getting started: python/1.md
 #    - Продолжение: python/2.md
-  - Blog:
-    - blog/index.md
+#  - Blog:
+#    - blog/index.md
 
 # Extensions
 markdown_extensions:

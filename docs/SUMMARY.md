@@ -4,3 +4,4 @@
         * [Python](coding/book/python.md)
     * [Blogs](coding/blog/index.md)
 * [Blog](blog/index.md)
+* [Tags](tags.md)
