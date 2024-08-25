@@ -28,18 +28,18 @@ theme:
   language: ru
   palette:
     - scheme: slate
-      primary: lime
-      accent: yellow
+      primary: black
+      accent: deep purple
       toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+        icon: material/toggle-switch-off-outline
+#        name: Switch to light mode
 
     - scheme: default
-      primary: lime
-      accent: yellow
+      primary: black
+      accent: indigo
       toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+        icon: material/toggle-switch-outline
+#        name: Switch to dark mode
 
 # Plugins
 plugins:
