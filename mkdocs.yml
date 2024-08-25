@@ -1,9 +1,10 @@
 # Project information
-site_name: The Evening Swamp
+site_name: Chimera
+site_description: focus on other things.
 
 # Repository
-repo_name: coplant/digital-garden
-repo_url: https://github.com/coplant/digital-garden
+repo_name: coplant/docs
+repo_url: https://github.com/coplant/docs
 
 # Configuration
 theme:
